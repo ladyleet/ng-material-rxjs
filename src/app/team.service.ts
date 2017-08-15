@@ -12,7 +12,7 @@ export class TeamService {
     person: "Matt Podwysocki",
     commits: "3",
     compliment: "He created RxJS4, so he's pretty cool.",
-    image: "podysocki.jpg"
+    image: "podwysocki.jpg"
   }, {
     person: "OJ Kwon",
     commits: "403",

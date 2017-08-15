@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MdSidenavModule, MdToolbarModule, MdIconModule, MdButtonModule, MdProgressBarModule, MdCardModule, MdGridListModule } from '@angular/material'; 
+import { MdSidenavModule, MdToolbarModule, MdIconModule, MdButtonModule, MdProgressBarModule, MdCardModule, MdGridListModule, MdListModule, MdTooltipModule } from '@angular/material'; 
 import { routing } from './app.routing';
 
 import 'hammerjs';
@@ -31,7 +31,9 @@ import { TeamComponent } from './team/team.component';
     MdButtonModule,
     MdProgressBarModule,
     MdCardModule,
-    MdGridListModule
+    MdGridListModule,
+    MdListModule,
+    MdTooltipModule
   ],
   providers: [TeamService, OperatorsService],
   bootstrap: [AppComponent]
