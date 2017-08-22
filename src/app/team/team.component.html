@@ -1,0 +1,17 @@
+<div>
+  <h1>Here's the RxJS Team!</h1>
+</div>
+<div>
+  <md-grid-list cols="4">
+    <md-grid-tile *ngFor="let image of teamData.team">
+      <img src="./assets/img/{{image.image}}" alt="RxJS Team Pics">
+    </md-grid-tile>
+  </md-grid-list>
+</div>
+<div>
+  <md-list>
+    <md-list-item *ngFor="let person of teamData.team">
+      {{person.person}} has {{person.commits}} commits on RxJS! {{person.compliment}}
+    </md-list-item>
+  </md-list>
+</div>
