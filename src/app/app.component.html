@@ -1,4 +1,30 @@
-<div class="body-margin center-align">
-  <router-outlet>
-  </router-outlet>
-</div>
+<md-sidenav-container fullscreen>
+  <md-sidenav #sidenav>
+    <md-toolbar>
+      <span routerLink="/">
+        Home
+      </span>
+      <md-toolbar-row routerLink="/operators">
+        Operators
+      </md-toolbar-row>
+      <md-toolbar-row routerLink="/team">
+        Team
+      </md-toolbar-row>
+      <md-toolbar-row routerLink="/about">
+        About
+      </md-toolbar-row>
+    </md-toolbar>
+  </md-sidenav>
+  <md-toolbar color="accent">
+    <button md-button (click)="sidenav.toggle()">
+      <md-icon>
+        menu
+      </md-icon>
+    </button>
+    RxJS Docs
+  </md-toolbar>
+  <div class="body-margin center-align">
+    <router-outlet>
+    </router-outlet>
+  </div>
+</md-sidenav-container>
