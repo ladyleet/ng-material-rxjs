@@ -1,0 +1,15 @@
+<div>
+  <h1>RxJS Operators</h1>
+</div>
+<md-grid-list cols="2">
+  <md-grid-tile *ngFor="let operator of operatorData.operators">
+    <md-card>
+      <md-card-title>
+        {{operator.operator}}
+      </md-card-title>
+      <md-card-content>
+        {{operator.details}}
+      </md-card-content>
+    </md-card>
+  </md-grid-tile>
+</md-grid-list>
